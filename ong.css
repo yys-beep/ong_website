@@ -8,6 +8,7 @@ body {
     background-image: url("背景.gif"); /* 背景图片路径 */
     background-size: cover;
     background-position: center; 
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     text-align: center;
     color: black;
