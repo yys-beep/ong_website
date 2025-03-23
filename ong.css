@@ -33,7 +33,7 @@ body {
 }
 
 .startAnimation{
-    margin-top: 30%;
+    margin-top: 20%;
     animation-name: textZoom;
     animation-duration: 2s;
     animation-iteration-count: 1;
