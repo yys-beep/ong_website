@@ -16,6 +16,7 @@ function startGame(){
     document.getElementById("start").style.display = "none";
     const audio = document.getElementById('backgroundMusic');
         audio.muted = false; // Unmute the audio immediately after loading
+        audio.volume = 0.2;
         audio.play().catch(() => console.log('Autoplay blocked. User interaction required.'));
 }
 
