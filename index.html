@@ -22,5 +22,13 @@
         <source src="swimming bgm.mp3" type="audio/mp3">
     </audio>
     <script src="ong.js"></script>
+    <script>
+    // Attempt to play the audio programmatically on load
+    const audio = document.getElementById('backgroundMusic');
+    window.addEventListener('load', () => {
+        audio.muted = false; // Unmute the audio immediately after loading
+        audio.play().catch(() => console.log('Autoplay blocked. User interaction required.'));
+    });
+    </script>
 </body>
 </html>
