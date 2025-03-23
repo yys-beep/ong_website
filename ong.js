@@ -67,6 +67,7 @@ function getRandomAssociations() {
     return selected;
 }
 
+const flipSound = document.getElementById("flipSound");
 // 创建卡牌
 function createCards() {
     const cardsContainer = document.getElementById('cards-container');
@@ -85,6 +86,7 @@ function createCards() {
         card.textContent = association;
         card.dataset.color = color; // 存储卡牌颜色
         card.addEventListener('click', (event) => {
+            flipSound.play();
             // 如果卡牌已经翻转，则缩小
             const current = event.target;
             if (card.classList.contains('flipped')) {
