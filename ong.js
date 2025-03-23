@@ -13,8 +13,10 @@ function startGame(){
     document.getElementById("game-container").style.boxShadow = " 0 4px 8px rgba(0, 0, 0, 0.2)";
     document.getElementById("game-container").classList.remove("startAnimation")
     document.getElementById("next-round").style.display = "inline-block";
-
     document.getElementById("start").style.display = "none";
+    const audio = document.getElementById('backgroundMusic');
+        audio.muted = false; // Unmute the audio immediately after loading
+        audio.play().catch(() => console.log('Autoplay blocked. User interaction required.'));
 }
 
 // 卡牌颜色对应的图片路径
