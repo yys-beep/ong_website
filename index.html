@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡牌翻翻乐</title>
+    <link rel="stylesheet" href="ong.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container" class="startAnimation">
+        <h1>卡牌翻翻乐</h1>
+        <button id="start" onclick="startGame()">开始</button>
+        <div id="cards-container"></div>
+        <button id="next-round">下一回合</button>
+        
+        
+    </div>
+    <audio autoplay loop id="backgroundMusic">
+        <source src="swimming bgm.mp3" type="audio/mp3">
+    </audio>
+    <audio id="flipSound">
+        <source src="flipSound.mp3" type="audio/mp3">
+    </audio>
+    <script src="ong.js"></script>
+</body>
+</html>
