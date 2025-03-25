@@ -165,7 +165,7 @@ h1{
 
 @media screen and (max-width: 650px){/*when width not exceed 650px*/
     h1{
-        font-size: 80%;
+        font-size: 70%;
         margin-top: 10%;
     }
     #start{
