@@ -173,7 +173,7 @@ h1{
     }
 }
 /* 
-@media screen and (min-width: 500px) and (max-width: 650px){/*when width not exceed 650px*/
+@media screen and (min-width: 500px) and (max-width: 650px){/*when width not exceed 650px
     h1{
         font-size: 110%;
         margin-top: 12%;
