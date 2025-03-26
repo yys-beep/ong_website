@@ -200,6 +200,7 @@ function createCards() {
                 card.style.backgroundImage = `url(${cardColors[color].front})`; // 翻回背面
                 card.classList.remove('flipped');
                 card.classList.add('flippedBack');
+                card.textContent = "";
                 console.log("flipped class removed");
             } 
             else {
