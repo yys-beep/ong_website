@@ -289,6 +289,7 @@ function createCards() {
                 card.style.backgroundImage = `url(${cardColors[color].front})`; // 翻回背面
                 card.classList.remove('flipped');
                 card.classList.add('flippedBack');
+                card.textContent = ``;
             } 
             else {
                 // 先将所有卡牌恢复原状
